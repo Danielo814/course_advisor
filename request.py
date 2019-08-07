@@ -28,10 +28,3 @@ def get_tee_times(link):
     print(new_dict)
 
 get_tee_times('https://hardingparkstarter1sdfij.ezlinks.com/(X(1)S(ivvd3i4z3iyqhzimx3gt1zdh))/Facility/ViewTeeSheet.aspx?AspxAutoDetectCookieSupport=1')
-            
-            
-        
-
-    
-    
-
