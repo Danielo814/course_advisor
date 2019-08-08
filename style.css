@@ -1,0 +1,27 @@
+.column {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.red-background {
+    background-color: #2286B2;
+}
+
+.blue-background {
+    background-color: #468FAF;
+}
+
+.green-background {
+    background-color: #6B9CB1;
+}
+
+h2 {
+    text-align: center;
+}
