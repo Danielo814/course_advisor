@@ -1,7 +1,8 @@
 <html>
     <head>
         <title>Course Advisor</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../style.css"> -->
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
         <script>
             if (Modernizr.draganddrop) {
              // Browser supports HTML5 DnD.
@@ -12,22 +13,22 @@
     </head>
     <body>
         <div class="row">
-            <div class="column green-background" draggable="true">
+            <div class="column green-background">
                 <h2>Tee times</h2>
             </div>
-            <div class="column blue-background" draggable="true">
+            <div class="column blue-background">
                 <h2>Groups</h2>
                 <div class="item-list block"></div>
                 <div class="item-list block"></div>
                 <div class="item-list block"></div>
                 <div class="item-list block"></div>
             </div>
-            <div class="column red-background" draggable="true">
+            <div class="column red-background">
                 <h2>Checked in</h2>
-                <div class="item-list block" draggable="true">Rick Sorken</div>
-                <div class="item-list block" draggable="true">Man Guy</div>
-                <div class="item-list block" draggable="true">Nick Tating</div>
-                <div class="item-list block" draggable="true">Daniel Ojeda</div>
+                <div class="item-list block" draggable="true">{{ name1 }}</div>
+                <div class="item-list block" draggable="true">{{ name2 }}</div>
+                <div class="item-list block" draggable="true">{{ name3 }}</div>
+                <div class="item-list block" draggable="true">{{ name4 }}</div>
             </div>
         </div>
     </body>
